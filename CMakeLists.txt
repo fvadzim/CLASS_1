@@ -3,4 +3,4 @@ project(MYCLASS)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(MYCLASS main.cpp VIEKT.cpp)
+add_executable(MYCLASS main.cpp VIEKT.cpp )

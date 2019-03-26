@@ -1,0 +1,13 @@
+#include <iostream>
+
+int *Resize(int * a, int oldSize, int newSize)
+{
+    int *t = new int[newSize];
+    memset(t, 0, sizeof(int) * newSize);
+
+    std::copy(a, a + std::min(oldSize, newSize), t);
+
+    delete[] a;
+
+    return t;
+}
